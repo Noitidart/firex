@@ -315,6 +315,7 @@ var ProxyAddonBar = {
 	},
 	preventHide: function(e) {
 		e.stopPropagation();
+		e.preventDefault();
 		Components.utils.reportError('PREVENTED HIDE');
 	}
 };
