@@ -10,8 +10,8 @@
 		<toolbarbutton type="menu-button" id="myextension-button" label="&addonToolbar;" tooltiptext="&addonToolbar;" class="toolbarbutton-1 chromeclass-toolbar-additional">
 			<menupopup>
 				<menuitem class="icon-activate menuitem-iconic" label="&activate;" oncommand="ProxyAddonBar.activate();"/>
-				<menu id="proxy-list-menu" class="icon-list menu-iconic" label="&proxy-list;" mouseenter="this.addEventListener('popuphiding', ProxyAddonBar.preventHide, false)" mousedown="this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)" mouseleave="this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)">
-					<menupopup>
+				<menu id="proxy-list-menu" class="icon-list menu-iconic" label="&proxy-list;">
+					<menupopup  onmouseenter="Components.utils.reportError('entered');this.addEventListener('popuphiding', ProxyAddonBar.preventHide, false)" onmousedown="Components.utils.reportError('downed');this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)" onmouseleave="Components.utils.reportError('left');this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)">
 						<vbox flex="1" class="proxy-help">
 							<html:div class="proxy-help-text">
 								<label>&proxy-help-list;</label>
