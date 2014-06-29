@@ -312,6 +312,9 @@ var ProxyAddonBar = {
 		}
 
 		return firstRun;
+	},
+	preventHide: function(e) {
+		e.stopPropagation();
 	}
 };
 
