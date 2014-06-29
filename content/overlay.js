@@ -317,6 +317,11 @@ var ProxyAddonBar = {
 		//e.stopPropagation();
 		e.preventDefault();
 		Components.utils.reportError('PREVENTED HIDE');
+	},
+	preventHide2: function(e) {
+		//e.stopPropagation();
+		e.preventDefault();
+		Components.utils.reportError('PREVENTED HIDE SRC 2');
 	}
 };
 
