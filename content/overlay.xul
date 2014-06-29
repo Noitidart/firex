@@ -9,8 +9,8 @@
 	<toolbarpalette id="BrowserToolbarPalette">
 		<toolbarbutton type="menu-button" id="myextension-button" label="&addonToolbar;" tooltiptext="&addonToolbar;" class="toolbarbutton-1 chromeclass-toolbar-additional">
 			<menupopup>
-				<menuitem class="icon-activate menuitem-iconic" label="&activate;" oncommand="ProxyAddonBar.activate();" onmouseenter="this.childNodes[0].addEventListener('popuphiding', ProxyAddonBar.preventHide2, false)" onmouseleave="this.childNodes[0].removeEventListener('popuphiding', ProxyAddonBar.preventHide2, false)"/>
-				<menu id="proxy-list-menu" class="icon-list menu-iconic" label="&proxy-list;">
+				<menuitem class="icon-activate menuitem-iconic" label="&activate;" oncommand="ProxyAddonBar.activate();"/>
+				<menu id="proxy-list-menu" class="icon-list menu-iconic" label="&proxy-list;" onmouseenter="this.childNodes[0].addEventListener('popuphiding', ProxyAddonBar.preventHide, false)" onmouseleave="this.childNodes[0].removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)">
 					<menupopup  onmouseenter="if (!event.relatedTarget) { Components.utils.reportError('entered');this.addEventListener('popuphiding', ProxyAddonBar.preventHide, false) }" onmousedown="Components.utils.reportError('downed');this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false)" onmouseleave="if (!event.relatedTarget) { Components.utils.reportError('left');this.removeEventListener('popuphiding', ProxyAddonBar.preventHide, false) }">
 						<vbox flex="1" class="proxy-help">
 							<html:div class="proxy-help-text">
