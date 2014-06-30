@@ -111,6 +111,7 @@ toolbarpaletteitem[place="palette"] #myextension-button {
 	text-align: center;
 	-moz-box-flex: 1;
 	display: -moz-box;
+	-moz-box-align: center;
 }
 .proxy-help-text > label {
 	
