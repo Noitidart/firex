@@ -61,9 +61,10 @@ toolbarpaletteitem[place="palette"] #myextension-button {
 }
 .proxy-list hbox {
 	font-size: 14px;
-	width: 100%;
 	margin: 2px;
 	cursor: pointer;
+	display: -moz-box;
+	-moz-box-flex: 1;
 }
 .proxy-list hbox > label {
 	cursor: pointer;
@@ -108,10 +109,11 @@ toolbarpaletteitem[place="palette"] #myextension-button {
 	border-radius: 10px;
 	padding: 5px;
 	text-align: center;
-	width: 100%;
+	-moz-box-flex: 1;
+	display: -moz-box;
 }
 .proxy-help-text > label {
-	width: 80%;
+	
 }
 .proxy-refresh-button {
 	padding: 5px;
